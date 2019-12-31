@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HKUST-MIT SmartEeb Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.38.3/plotly.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/chart.js"></script>
+</head>
+<body>
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <p class="navbar-brand">SMARTEEB PROJECT</p>
+            </div>
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html"><i class="menu-icon fa fa-line-chart"></i>Real Time Data</a></li>
+                    <p class="menu-title">Historical Data</p>
+                    <li><a href="/data/enthalpy.html"><i class="menu-icon fa fa-battery-half"></i>Enthalpy Intensity</a></li>
+                    <li class="active"><a href="/data/comfort.html"><i class="menu-icon fa fa-users"></i>Thermal Comfort</a></li>
+                    <li><a href="/data/temperature.html"><i class="menu-icon fa fa-thermometer-half"></i>Temperature</a></li>
+                    <li><a href="/data/humidity.html"><i class="menu-icon fa fa-tint"></i>Relative Humidity</a></li>
+                    <li><a href="/data/velocity.html"><i class="menu-icon fa fa-tachometer"></i>Velocity</a></li>
+                    <li><a href="/data/illuminance.html"><i class="menu-icon fa fa-lightbulb-o"></i>Illuminance</a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <div id="right-panel" class="right-panel">
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa-tasks"></i></a>
+                    <p>Please choose one active sensor: <select id="sensor-selection"></select></p>
+                </div>
+            </div>
+        </header>
+        <div class="content mt-3">
+            <div class="col-sm-12">
+                <div class="alert alert-danger" role="alert" style="display: none;">
+                    <span class="badge badge-pill badge-danger">ERROR</span>
+                    <span class="message"></span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card" >
+                    <div class="card-header">Last Day</div>
+                    <div class="graphic" id="day"></div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card" >
+                    <div class="card-header">Last Week</div>
+                    <div class="graphic" id="week"></div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card" >
+                    <div class="card-header">Last Month</div>
+                    <div class="graphic" id="month"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

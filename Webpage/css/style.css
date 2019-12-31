@@ -1,0 +1,364 @@
+/* This css file is to over write bootstarp css
+--------------------------------------------------------- /
+ * Theme Name: Sufee-Admin Admin Template
+ * Theme URI: http://demos.jeweltheme.com/Sufee-Admin/
+ * Author: jewel_theme
+ * Author URI: http://themeforest.net/user/jewel_theme/portfolio
+ * Description:
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags: html, themplate, Sufee-Admin
+ --------------------------------------------------------- */
+/* Bootstrap */
+body {
+    background: #f1f2f7;
+    font-size: 14px;
+    width: 100%;
+    display: table;
+}
+
+div[class*="col-"] {
+    float: left;
+}
+
+a, button {
+    text-decoration: none;
+    outline: none !important;
+    color: #878787;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Global Styles */
+/* Main Styles */
+aside.left-panel {
+    background: #272c33;
+    display: table-cell;
+    height: 100vh;
+    min-height: 100%;
+    padding: 0 25px;
+    vertical-align: top;
+    width: 220px;
+    transition: width 0.3s ease;
+}
+
+.navbar {
+    background: #272c33;
+    border-radius: 0;
+    border: none;
+    display: block;
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.navbar .navbar-header {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar .navbar-brand {
+    border-bottom: 1px solid #4e4e52;
+    color: #f1f2f7 !important;
+    float: none;
+    line-height: 50px;
+    margin: 0;
+    text-align: left;
+    text-transform: capitalize;
+    display: block;
+    min-height: 69px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+}
+
+.navbar .menu-title {
+    border-bottom: 1px solid #4e4e52;
+    color: #9496a1;
+    clear: both;
+    display: block;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 15px 0 0 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.navbar .navbar-nav {
+    float: none;
+    position: relative;
+}
+
+.navbar .navbar-nav li {
+    width: 100%;
+}
+
+.navbar .navbar-nav li.active .menu-icon {
+    color: #fff !important;
+}
+
+.navbar .navbar-nav li > a {
+    background: none !important;
+    color: #c8c9ce !important;
+    display: inline-block;
+    line-height: 30px;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.navbar .navbar-nav li > a:hover,
+.navbar .navbar-nav li > a:hover .menu-icon {
+    color: #fff !important;
+}
+
+.navbar .navbar-nav li > a .menu-icon {
+    color: #8b939b;
+    float: left;
+    margin-top: 8px;
+    width: 30px;
+    text-align: left;
+    z-index: 9;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:focus,
+.navbar .navbar-nav > .active > a:hover {
+    color: #d7d9e3 !important;
+}
+
+.open aside.left-panel {
+    max-width: 40px;
+    width: 40px;
+}
+
+.open aside.left-panel .navbar {
+    display: none;
+}
+
+/* Right panel */
+.right-panel {
+    display: table-cell;
+    padding-left: 0 !important;
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+
+.right-panel header.header {
+    background: #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    clear: both;
+    display: inline-block;
+    padding: 15px 20px 13px 20px;
+    width: 100%;
+}
+
+.header-menu .col-sm-7 {
+    position: inherit;
+}
+
+.header-menu p {
+    margin-top: 10px;
+}
+
+.menutoggle {
+    background: #e74c3c;
+    border-radius: 50%;
+    color: #fff !important;
+    cursor: pointer;
+    height: 43px;
+    line-height: 44px;
+    margin: -2px 20px 0 -57px;
+    text-align: center;
+    width: 43px;
+}
+
+.open .menutoggle i:before {
+    content: "\f0a4";
+}
+
+.content {
+    float: left;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    border-radius: 0;
+}
+
+.card .graphic {
+    width: 100%;
+    height: 100%;
+}
+
+.card .graphic img,
+.card .graphic .svg-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1368px) {
+    .content {
+        padding: 0 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    aside.left-panel {
+        padding: 0 20px;
+        width: 200px;
+    }
+
+    .navbar .navbar-nav li > a .menu-icon {
+        width: 30px;
+    }
+
+    .card .card-header {
+        position: relative;
+    }
+}
+
+@media (max-width: 575.99px) {
+    body {
+        display: block;
+    }
+
+    aside.left-panel {
+        display: block;
+        height: auto;
+        min-height: inherit;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    aside.left-panel .navbar {
+        margin-bottom: 0;
+    }
+
+    aside.left-panel .navbar .navbar-header {
+        height: 50px;
+    }
+
+    aside.left-panel .navbar .navbar-brand {
+        border-bottom: none;
+        display: inline-block;
+        float: left;
+        line-height: 1;
+        margin-top: 11px;
+        min-height: inherit;
+    }
+
+    aside.left-panel .navbar .navbar-brand.hidden {
+        display: none;
+    }
+
+    aside.left-panel .navbar .navbar-toggler {
+        float: right;
+        margin-top: 8px;
+    }
+
+    aside.left-panel .navbar .navbar-nav li > a {
+        padding: 5px 0;
+    }
+
+    aside.left-panel .navbar .menu-title {
+        line-height: 30px;
+        padding: 0;
+    }
+
+    .open aside.left-panel {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .open aside.left-panel .navbar {
+        display: block;
+    }
+
+    .menutoggle {
+        display: none;
+    }
+
+    .right-panel {
+        display: block;
+    }
+
+    .right-panel header.header {
+        padding: 5px 10px 1px 5px;
+    }
+
+    .right-panel header.header div[class*="col"] {
+        padding: 0;
+        width: initial;
+    }
+
+    .right-panel header.header .col-sm-7 {
+        float: left;
+    }
+
+    .header-menu p {
+        margin-top: 0px;
+    }
+
+    .right-panel .content {
+        padding: 0 10px;
+    }
+
+    .right-panel .content div[class*="col"] {
+        padding: 0;
+    }
+
+    .right-panel .content .row div[class*="col"] {
+        padding: 0 10px;
+    }
+}
+
+/*sourceMappingURL=style.css.map */
+
